@@ -30,7 +30,7 @@ router.get("/getAd/:id", async(req,res) =>{
                         .catch((err)=>{ res.status(400).json(`Error:${err}`)});
 });
 
-//Request to Find by ID and Update
+//Request to Find Advertisement by ID and Update
 router.put("/update/:id", async(req,res) =>{
     
     const {title,category,storeStatus,description,adStatus,SP_ID,storeId}=req.body;
