@@ -41,7 +41,7 @@ router.put("/update/:id", async(req,res) =>{
                         .catch((err)=>{ res.status(400).json(`Error:${err}`)});
 });                        
 
-//Request to Find by ID and Delete
+//Request to Find Advertisement by ID and Delete
 router.delete("/delete/:id", async(req,res)=>{
 
     await Advertisements.findByIdAndDelete(req.params.id)
