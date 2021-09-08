@@ -38,7 +38,7 @@ export default slideImages;
 const SlidesContainer =styled.div`
       
        img{
-           height:400px;
+           height:300px;
            width:100%;
        }
        .carousel-control-prev-icon{
