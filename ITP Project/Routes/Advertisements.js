@@ -22,7 +22,7 @@ router.post("/add", async(req,res) =>{
                .catch((err)=>{ res.status(400).json(`Error: ${err}`)});
 } );
 
-//Request to Find by ID
+//Request to Find Advertisement by ID
 router.get("/getAd/:id", async(req,res) =>{
 
     await Advertisements.findById(req.params.id)
